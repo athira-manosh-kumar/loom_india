@@ -1337,3 +1337,17 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Preserve the neckline-to-hem framing of supplied fashion references. */
+.hero-photo,
+.curate-visual,
+.editorial-img {
+  background: #e8e7e3;
+}
+.hero-photo img,
+.curate-visual img,
+.editorial-img img,
+.canvas-image img {
+  object-fit: contain;
+  object-position: center;
+}

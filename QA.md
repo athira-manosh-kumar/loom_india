@@ -25,4 +25,4 @@ Desktop 1440 × 1000 and mobile 390 × 844 home/Atelier showed no horizontal doc
 
 ## Limits
 
-Five automated domain tests pass. This is functional and visual QA, not user research, a formal WCAG certification, a cross-browser compatibility guarantee, or textile feasibility validation. Chrome could not be launched inside the shell sandbox, so interaction checks were run in the in-app browser. The three referenced fashion videos were unavailable in the cached conversation and local sources; they were not inspected. All final model imagery is sourced stock photography, with credits; no generated model assets ship.
+Five automated domain tests pass. This is functional and visual QA, not user research, a formal WCAG certification, a cross-browser compatibility guarantee, or textile feasibility validation. Chrome could not be launched inside the shell sandbox, so interaction checks were run in the in-app browser. The three referenced fashion videos were unavailable in the cached conversation and local sources; they were not inspected. All final model imagery is sourced fashion reference photography, with credits; no generated model assets ship.

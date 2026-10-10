@@ -30,7 +30,7 @@ Stop the first server before serving the build on the same port. `dist/` is a de
 
 ## Honest boundaries
 
-This is a production-style frontend concept, not a production commerce backend. The nine-item catalog, prices, fabric composition, product specifications and size chart are illustrative. Stock photographs are style references, not exact SKU images. There is no model generation, image analysis, account, inventory, payment, order, shipping or designer booking integration. Interface labels make these boundaries explicit. Photo sources and terms are in `assets/CREDITS.md`.
+This is a production-style frontend concept, not a production commerce backend. The nine-item catalog, prices, fabric composition, product specifications and size chart are illustrative. Fashion reference photographs are style references, not exact SKU images. There is no model generation, image analysis, account, inventory, payment, order, shipping or designer booking integration. Interface labels make these boundaries explicit. Photo sources and terms are in `assets/CREDITS.md`.
 
 Bag, wishlist and version briefs use browser localStorage. Custom fit storage is opt-in and unencrypted, and can be deleted from Fabric & fit. Upload previews use temporary object URLs on the current device; no upload is transmitted and images are not persisted with saved versions. Clearing browser storage clears saved data. The open brief survives route changes in the current visit; saved versions survive reloads.
 
