@@ -6,7 +6,7 @@ Source pages checked 10 October 2026. Usage terms: https://www.pexels.com/licens
 
 | File | Photographer | Source |
 | --- | --- | --- |
-| saree-real.jpg | Azmain Abir | https://www.pexels.com/photo/portrait-of-a-woman-wearing-saree-7850255/ |
+| saree-real.jpg | Pexels photo 12327758; photographer attribution unverified | https://www.pexels.com/photo/a-woman-in-saree-12327758/ |
 | everyday-real.jpg | User-supplied reference 14 | Burgundy printed dress; original photographer unverified |
 | festive-real.jpg | User-supplied reference 8 | Olive lehenga; original photographer unverified |
 | indian-real.jpg | User-supplied reference 2 | Pastel kurta set; original photographer unverified |

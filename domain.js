@@ -6,7 +6,7 @@ export const products = [
     occasion: ["Festive", "Partywear"],
     price: 6490,
     fabric: "Silk blend · woven border",
-    tone: "Teal",
+    tone: "Red",
     image: "saree-real",
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     occasion: ["Everyday"],
     price: 1490,
     fabric: "Cotton blend · light weave",
-    tone: "Teal",
+    tone: "Red",
     image: "saree-real",
   },
   {

@@ -1351,3 +1351,28 @@ nav a {
   object-fit: contain;
   object-position: center;
 }
+
+.fabric-directions {margin-bottom: 32px;}
+.fabric-directions .eyebrow {margin-bottom: 8px;}
+.atelier-promo .fabric-caption {font-size: 12px; margin: 0 0 18px;}
+.fabric-samples {display: flex;gap: 18px;}
+.fabric-samples figure {margin: 0;flex: 1;max-width: 120px;}
+.fabric-sample {display: block;height: 82px;border: 1px solid #bd939c;}
+.sample-woven {background: repeating-linear-gradient(90deg,#a66c7b 0 2px,#915465 2px 4px);}
+.sample-soft {background: #e2d2b8;}
+.sample-color {background: #5e6956;}
+.fabric-samples figcaption {font-size: 10px;margin-top: 9px;letter-spacing: .02em;}
+footer {padding: 60px 5% 24px;}
+.footer-top {grid-template-columns: minmax(270px,1.7fr) repeat(3,minmax(0,1fr));gap: 40px;}
+.footer-top .footer-story {display: block;}
+.footer-story .brand {display: inline-block;margin-bottom: 28px;}
+.footer-story h2 {font-size: 34px;line-height: 1.15;}
+.footer-story p {font-size: 12px;color: var(--muted);max-width: 290px;margin-top: 16px;}
+.footer-top .footer-group {gap: 0;padding-top: 8px;}
+.footer-group h3 {text-transform: uppercase;letter-spacing: .12em;font-size: 10px;margin-bottom: 20px;color: var(--wine);}
+.footer-group a,.footer-group button {min-height: 44px;display: flex;align-items: center;font-size: 12px;text-decoration: none;text-align: left;}
+.footer-group a:hover,.footer-group button:hover {text-decoration: underline;text-underline-offset: 5px;}
+.footer-bottom {align-items: baseline;line-height: 1.6;}
+@media(max-width:1000px) {.footer-top {grid-template-columns: repeat(3,minmax(0,1fr));gap: 32px;}.footer-top .footer-story {grid-column: 1/-1;}.footer-story h2 {font-size: 38px;}.footer-story p {max-width: 460px;}}
+@media(max-width:600px) {footer {padding-top: 42px;}.footer-top {grid-template-columns: repeat(2,minmax(0,1fr));gap: 25px;}.footer-story h2 {font-size: 32px;}.footer-group h3 {line-height: 1.7;margin-bottom: 10px;}.footer-bottom {margin-top: 30px;}.fabric-samples {gap: 12px;}.fabric-sample {height: 70px;}}
+.footer-story .brand span {display: block;}
