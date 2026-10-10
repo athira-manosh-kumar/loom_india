@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#682b39" />
+    <meta
+      name="description"
+      content="Loom India — considered Indian fashion, everyday to extraordinary. Explore sarees, Indian wear, fusion and a creative Atelier concept."
+    />
+    <title>Loom India — Woven into your story</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="announcement">
+      A little everyday. A little extraordinary.
+      <span>Discover the new season →</span>
+    </div>
+    <header>
+      <a class="brand" href="#home" aria-label="Loom India home"
+        >loom<span>INDIA</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#shop">Shop</a><a href="#journal">The Loom Journal</a
+        ><a href="#curate">Curate Your Look</a
+        ><a href="#atelier">Create with Loom <sup>AI</sup></a>
+      </nav>
+      <div class="header-actions">
+        <button id="search-open" aria-label="Search products">⌕</button
+        ><a href="#saved" aria-label="Saved pieces and designs"
+          >♡<span id="saved-count">0</span></a
+        ><a href="#bag" aria-label="Shopping bag"
+          >Bag <span id="bag-count">0</span></a
+        ><button id="menu" aria-label="Open navigation" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer>
+      <div class="footer-top">
+        <a class="brand" href="#home">loom<span>INDIA</span></a>
+        <h2>Rooted in India.<br />Made for your story.</h2>
+        <div>
+          <a href="#shop">Explore the collection</a
+          ><a href="#atelier">Create with Loom</a
+          ><button class="text-button" data-info="care">Care &amp; craft</button
+          ><button class="text-button" data-info="help">
+            Help &amp; delivery
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Loom India · Concept storefront</span
+        ><span
+          >Illustrative products · stock fashion photography. No orders or
+          payments accepted.</span
+        >
+      </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="dialog">
+      <button class="close" aria-label="Close dialog">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
