@@ -1376,3 +1376,9 @@ footer {padding: 60px 5% 24px;}
 @media(max-width:1000px) {.footer-top {grid-template-columns: repeat(3,minmax(0,1fr));gap: 32px;}.footer-top .footer-story {grid-column: 1/-1;}.footer-story h2 {font-size: 38px;}.footer-story p {max-width: 460px;}}
 @media(max-width:600px) {footer {padding-top: 42px;}.footer-top {grid-template-columns: repeat(2,minmax(0,1fr));gap: 25px;}.footer-story h2 {font-size: 32px;}.footer-group h3 {line-height: 1.7;margin-bottom: 10px;}.footer-bottom {margin-top: 30px;}.fabric-samples {gap: 12px;}.fabric-sample {height: 70px;}}
 .footer-story .brand span {display: block;}
+
+.heart {display: grid;place-items: center;}
+.heart-icon {width: 22px;height: 22px;display: inline-block;vertical-align: middle;flex-shrink: 0;}
+.header-actions .heart-icon {width: 18px;height: 18px;}
+.hero-photo:has(img[src*="group-real"]) {background: #b7ada1;}
+.hero-photo img[src*="group-real"] {object-fit: cover;object-position: center top;}

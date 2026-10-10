@@ -92,14 +92,17 @@ dialog.addEventListener("click", (e) => {
       dialog.close();
   }
 });
+function heartIcon(filled = false) {
+  return `<svg class="heart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="${filled ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>`;
+}
 function productCard(p) {
-  return `<article class="product-card"><div class="product-image"><a href="#product/${p.id}">${img(p)}</a><button class="heart" data-save="${p.id}" aria-label="${saved.includes(p.id) ? "Unsave" : "Save"} ${p.name}" aria-pressed="${saved.includes(p.id)}">${saved.includes(p.id) ? "♥" : "♡"}</button><span class="tag">${p.occasion[0].toUpperCase()}</span></div><a href="#product/${p.id}"><h3>${p.name}</h3><p class="meta">${p.fabric}</p><p class="price">${money(p.price)} <span>Illustrative price</span></p></a></article>`;
+  return `<article class="product-card"><div class="product-image"><a href="#product/${p.id}">${img(p)}</a><button class="heart" data-save="${p.id}" aria-label="${saved.includes(p.id) ? "Unsave" : "Save"} ${p.name}" aria-pressed="${saved.includes(p.id)}">${heartIcon(saved.includes(p.id))}</button><span class="tag">${p.occasion[0].toUpperCase()}</span></div><a href="#product/${p.id}"><h3>${p.name}</h3><p class="meta">${p.fabric}</p><p class="price">${money(p.price)} <span>Illustrative price</span></p></a></article>`;
 }
 function intro(eyebrow, title, copy) {
   return `<div class="page-intro"><div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p>${copy}</p></div>`;
 }
 function home() {
-  return `<section class="hero"><div class="hero-copy"><div class="eyebrow">Indian roots. Your expression.</div><h1>Woven into<br>your story.</h1><p>For slow mornings, big celebrations and everything in between. Discover Indian fashion that feels like you.</p><a class="button" href="#shop">Explore the collection <span>↗</span></a><div class="hero-meta"><span>EVERYDAY FROM ₹1,490</span><span>OCCASION TO PREMIUM</span></div></div><div class="hero-photo"><img src="assets/green-real.jpg" alt="Fashion reference of a woman in a black embellished saree" fetchpriority="high"><div class="photo-label">THE NEW SEASON · ROOTED & REIMAGINED</div></div></section><div class="ticker"><span>SAREES & STORIES</span><span>EVERYDAY EASE</span><span>MODERN INDIAN EXPRESSION</span><span>YOUR NEXT CELEBRATION</span></div><section class="section"><div class="section-head"><div><div class="eyebrow">A wardrobe, many worlds</div><h2>Find your kind of beautiful.</h2></div><a class="text-link" href="#shop">Shop all pieces ↗</a></div><div class="world-grid">${categories
+  return `<section class="hero"><div class="hero-copy"><div class="eyebrow">Indian roots. Your expression.</div><h1>Woven into<br>your story.</h1><p>For slow mornings, big celebrations and everything in between. Discover Indian fashion that feels like you.</p><a class="button" href="#shop">Explore the collection <span>↗</span></a><div class="hero-meta"><span>EVERYDAY FROM ₹1,490</span><span>OCCASION TO PREMIUM</span></div></div><div class="hero-photo"><img src="assets/group-real.jpg" alt="Two women wearing contemporary Indian cape and skirt sets in indigo and blue" fetchpriority="high"><div class="photo-label">THE NEW SEASON · ROOTED & REIMAGINED</div></div></section><div class="ticker"><span>SAREES & STORIES</span><span>EVERYDAY EASE</span><span>MODERN INDIAN EXPRESSION</span><span>YOUR NEXT CELEBRATION</span></div><section class="section"><div class="section-head"><div><div class="eyebrow">A wardrobe, many worlds</div><h2>Find your kind of beautiful.</h2></div><a class="text-link" href="#shop">Shop all pieces ↗</a></div><div class="world-grid">${categories
     .slice(1)
     .map(
       (c, i) =>
@@ -351,7 +354,7 @@ document.addEventListener("click", (e) => {
       `${saved.includes(id) ? "Unsave" : "Save"} ${products.find((p) => p.id === id).name}`,
     );
     if (b.classList.contains("heart"))
-      b.textContent = saved.includes(id) ? "♥" : "♡";
+      b.innerHTML = heartIcon(saved.includes(id));
     else
       b.textContent = saved.includes(id)
         ? "Remove from saved pieces"

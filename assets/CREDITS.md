@@ -12,6 +12,7 @@ Source pages checked 10 October 2026. Usage terms: https://www.pexels.com/licens
 | indian-real.jpg | User-supplied reference 2 | Pastel kurta set; original photographer unverified |
 | fusion-real.jpg | User-supplied reference 4 | Fuchsia embroidered cape; original photographer unverified |
 | green-real.jpg | User-supplied reference 5 | Black evening saree. Related original product: https://www.houseofindya.com/black-sequin-embroidered-georgette-saree-set-412336/iprdt ; exact image attribution unverified |
+| group-real.jpg | User-supplied reference 16 | Two models in contemporary cape and skirt sets; original photographer unverified |
 | party-real.jpg | User-supplied reference 1 | Rose embroidered gown; original photographer unverified |
 
 The user explicitly authorized use of supplied photos as concept references on 10 October 2026. This is not evidence of commercial photography rights. Replace reference images with licensed supplier photography before a commercial launch. No designer partnership is implied.
